@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
+
+header{
+    position: relative;
+    top: 0%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 90px;
+    font-size: 19px;
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+    -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+    
+}
+.nav-ri input, button{
+    font-size: 16px;
+font-weight: bold;
+padding: 2px;
+border: 3px solid black;
+border-radius: 2px;
+background: none;
+color: black;
+cursor: pointer;
+border-radius: 8px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding-left: 4px;
+      
+}
+
+.logo img{
+    width: 90px;
+    border: 3px solid rgb(60, 60, 124);
+    border-radius: 50px;
+    margin: 0%;
+}
+.navbar li{
+    list-style: none;
+    padding: 50px; 
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    position: relative;   
+    transition: 0.5s;
+}
+
+.nav-ri{
+    text-align: right;
+    width: 20%;
+    padding-right: 3px;
+}
+
+
+.navbar li a:after{
+    content: "";
+    position: absolute;
+    transform-origin: bottom right;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+   left: 0;
+   background-color: rgb(194, 86, 72);
+   border-radius: 2px;
+   transition: width 0.5s ease-out;
+}
+
+.navbar li a:hover{
+    font-size: 21px;
+    transition: 0.5s ease-out;
+    color: rgb(194, 86, 72);
+
+    
+}
+
+.navbar li a:hover:after{
+        width: 100%;
+        transition: width 0.5s ease-out;
+        transform-origin: bottom left;
+    }
+    .home::after{
+        content: " ";
+        background: url(background_home5.jpeg) no-repeat center center/cover;
+        mix-blend-mode: darken;
+        position: absolute;
+        top: 100px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+nav{
+    height: 100px;
+}
+nav::before {
+    content: " ";
+    background-color: rgb(221, 218, 218);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -5;
+}
+
+
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 60%;
+    margin: auto;
+}
+
+.first-half{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.second-half{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.second-half img{
+        width: 60%;
+        border-radius: 100px;
+        border: 5px solid rgb(234, 240, 238);
+}
+
+.heading{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.small-head{
+    font-size: 30px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+
+}
+
+.book-button button{
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 23px;
+     border: 2px solid rgb(248, 247, 247);
+    background: none;
+    border-radius: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+.book-button button:hover{
+    background: rgb(248, 142, 142);
+    transition: 0.4s ease-in;
+    transform-origin: start;
+
+}
+
+
+.service{
+    background: rgb(228, 227, 227);
+    padding: 30px 150px;
+    flex: 3;
+    background: url("background_home4.jpeg") no-repeat center center/cover;
+    width : 100%;
+}
+
+.serve{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Services{
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 23px;
+    margin: 10px;
+    height: 230px;
+    padding: 9px;
+    width: 270px;
+    transition: 0.5s ease-in-out;
+    transform-origin: center;
+}
+
+.Services:hover{
+cursor: pointer;
+color: whitesmoke;
+transition: 0.4s ease-in-out;
+-webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(9px);}
+
+.Services:hover{
+       height: 250px;
+       width: 280px;
+       transition: 0.5s ease-in-out;
+       font-size: 17px;
+    }
+
+    .Services:hover img{
+        transition: 0.4s ease-in-out;
+        height: 110px;
+        width: 110px;
+        transition: 0.5s ease-in-out;
+    }
+
+.Services img{
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+    background: white;
+    border-radius: 23px;
+    transition: 0.4s ease-in-out;
+}
+
+.why{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(185, 160, 164);
+    flex-direction: column;
+}
+
+.why p{
+    font-size: 19px;
+    padding: 4px 53px;
+}
+
+.reasons{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin: 0px 300px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 23px;
+    width: 299px;
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 13px;
+    padding-bottom: 9px;
+}
+.last{
+    background-color: black;
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last hr{
+    margin: 23px;
+    border: 3px solid white;
+    width: 90%;
+    color: black;
+    border-radius: 10px;
+}
+.symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+box-icon{
+    margin: 9px 23px;
+    border: 2px solid white ;
+    border-radius: 23px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.info2{
+justify-content: center;
+margin: 8px 58px;
+}
+.info2 h3{
+    color: red;
+}
+.info a{
+    display: block;
+    cursor: pointer;
+}
+.info a:hover{
+font-size: 19px;
+}
+
+footer{
+    margin-top: 20px;
+}
